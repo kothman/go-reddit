@@ -13,7 +13,7 @@ type Subreddit struct {
 	BannerSize              []int  `json:"banner_size"`
 	CollapseDeletedComments bool   `json:"collapse_deleted_comments"`
 	CommentScoreHideMins    int    `json:"comment_score_hide_mins"`
-	Created                 number  `json:"created"`
+	Created                 json.Number  `json:"created"`
 	CreatedUtc              int    `json:"created_utc"`
 	Description             string `json:"description"`
 	DescriptionHTML         string `json:"description_html"`
